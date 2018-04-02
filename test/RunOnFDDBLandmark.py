@@ -15,7 +15,7 @@ out_dir = '/home/thinkjoy/chen_obj/FDDB/FDDB/mtcnn_landmark_result'
 def get_imdb_fddb(data_dir):
     imdb = []
     nfold = 10
-    for n in xrange(nfold):
+    for n in range(nfold):
         file_name = 'FDDB-folds/FDDB-fold-%02d.txt' % (n + 1)
         file_name = os.path.join(data_dir, file_name)
         fid = open(file_name, 'r')

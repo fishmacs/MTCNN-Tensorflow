@@ -57,7 +57,7 @@ while True:
         cv2.putText(frame, '{:.4f}'.format(t) + " " + '{:.3f}'.format(fps), (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
                     (255, 0, 255), 2)
         for i in range(landmarks.shape[0]):
-            for j in range(len(landmarks[i])/2):
+            for j in range(len(landmarks[i])//2):
                 cv2.circle(frame, (int(landmarks[i][2*j]),int(int(landmarks[i][2*j+1]))), 2, (0,0,255))            
         # time end
         cv2.imshow("", frame)
