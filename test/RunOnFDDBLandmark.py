@@ -66,7 +66,7 @@ if __name__ == "__main__":
     nfold = len(imdb)    
     for i in xrange(nfold):
         image_names = imdb[i]
-        print image_names
+        print(image_names)
         dets_file_name = os.path.join(out_dir, 'FDDB-det-fold-%02d.txt' % (i + 1))
         fid = open(dets_file_name,'w')
         sys.stdout.write('%s ' % (i + 1))
